@@ -1,4 +1,4 @@
-# security-advisory
+# 🐞 Security Advisories
 
 📋 This repository contains an PDF export of every security advisory related to a [CVE](https://www.redhat.com/en/topics/security/what-is-cve) belonging to me.
 
