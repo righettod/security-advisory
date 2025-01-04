@@ -4,4 +4,4 @@
 
 📦 It is a **backup copy** of the online version of the security advisories.
 
-🌏 PDF were generated using this [site](https://www.sejda.com/html-to-pdf).
+🌏 PDF files were generated using this [site](https://www.sejda.com/html-to-pdf).
