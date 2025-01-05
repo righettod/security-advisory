@@ -1,0 +1,20 @@
+name: Validate PDF Files
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v4
+      - name: Install the system dependencies
+        run: sudo apt install -y file pdfgrep dos2unix
+      - name: Validate the PDF files
+        run: |
+          dos2unix validate-pdf-files.sh
+          chmod +x validate-pdf-files.sh
+          bash validate-pdf-files.sh
