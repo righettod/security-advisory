@@ -1,5 +1,5 @@
 #!/bin/bash
-# Ensure that advisory files are valid PDF files
+# Ensure that advisory files are valid PDF and CVE advisory files
 # Dependencies: apt install file pdfgrep
 counter=0
 for adv in $(ls advisories/*.pdf)
