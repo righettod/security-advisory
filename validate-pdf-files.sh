@@ -2,7 +2,7 @@
 # Ensure that advisory files are valid PDF and CVE advisory files
 # Dependencies: apt install file pdfgrep
 counter=0
-for adv in $(ls advisories/*.pdf)
+for adv in $(ls thales-advisories/*.pdf)
 do
 	check=$(file "$adv" | grep -Fic "PDF document")
 	if [ $check -ne 1 ]
