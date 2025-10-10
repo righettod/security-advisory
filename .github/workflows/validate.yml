@@ -12,7 +12,9 @@ jobs:
       - name: Clone the repository
         uses: actions/checkout@v5
       - name: Install the system dependencies
-        run: sudo apt install -y file pdfgrep dos2unix
+        run: |
+          sudo apt update -y
+          sudo apt install -y file pdfgrep dos2unix
       - name: Validate the PDF files
         run: |
           dos2unix validate-pdf-files.sh
