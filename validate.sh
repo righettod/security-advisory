@@ -22,7 +22,8 @@ do
 	then
 		echo "[!] File '$adv' do not contains the header 'Abstract Advisory Information'!"
 		exit 3
-	fi	
+	fi
+	echo "=> '$adv' file OK."
 	counter=$((counter + 1))
 done
 echo "## Validate advisories JSON files"
@@ -39,7 +40,8 @@ do
 	then
 		echo "[!] File '$adv' do not contains a reference to me!"
 		exit 5
-	fi	
+	fi
+	echo "=> '$adv' file OK."
 	counter=$((counter + 1))
 done
 echo "[V] $counter advisory files are OK."
