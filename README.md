@@ -2,7 +2,7 @@
 
 [![Validate](https://github.com/righettod/security-advisory/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/righettod/security-advisory/actions/workflows/validate.yml)
 
-📋 This repository contains a PDF export of every security advisory related to a [CVE](https://www.redhat.com/en/topics/security/what-is-cve) belonging to a vulnerability that I had identified.
+📋 This repository contains a export of every security advisory related to a [CVE](https://www.redhat.com/en/topics/security/what-is-cve) belonging to a vulnerability that I had identified.
 
 📦 It is a **backup copy** of the online version of the security advisories.
 
@@ -12,4 +12,4 @@
 
 * [thales-advisories](thales-advisories): Security advisories published by Excellium Services or Thales CSIRT.
 * [other-advisories](other-advisories): Security advisories published by other PSIRT/CSIRT/CNA.
-* [no-advisories](no-advisories): Contains the JSON data of a CVE in case of an advisory not published.
+* [no-advisories](no-advisories): Contains JSON data for CVE for which an advisory was not published.
