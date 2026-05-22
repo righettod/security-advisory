@@ -1,10 +1,9 @@
-name: Validate PDF Files
+name: Validate advisories Files
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   workflow_dispatch:
+permissions: read-all    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,9 +13,9 @@ jobs:
       - name: Install the system dependencies
         run: |
           sudo apt update -y
-          sudo apt install -y file pdfgrep dos2unix
+          sudo apt install -y file pdfgrep dos2unix jq
       - name: Validate the PDF files
         run: |
-          dos2unix validate-pdf-files.sh
-          chmod +x validate-pdf-files.sh
-          bash validate-pdf-files.sh
+          dos2unix validate.sh
+          chmod +x validate.sh
+          bash validate.sh
