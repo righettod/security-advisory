@@ -1,4 +1,4 @@
-name: Validate advisories Files
+name: Validate advisories files
 on:
   push:
     branches: [ "main" ]
