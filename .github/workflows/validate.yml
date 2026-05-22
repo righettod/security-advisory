@@ -14,7 +14,7 @@ jobs:
         run: |
           sudo apt update -y
           sudo apt install -y file pdfgrep dos2unix jq
-      - name: Validate the PDF files
+      - name: Validate the advisories files
         run: |
           dos2unix validate.sh
           chmod +x validate.sh
