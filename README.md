@@ -12,4 +12,4 @@
 
 * [thales-advisories](thales-advisories): Security advisories published by Excellium Services or Thales CSIRT.
 * [other-advisories](other-advisories): Security advisories published by other PSIRT/CSIRT/CNA.
-* [no-advisories](no-advisories): Contains JSON data for CVE for which an advisory was not published.
+* [no-advisories](no-advisories): Contains JSON data related to CVE vulnerabilities for which either no security advisory has been published, or the link to the advisory is not guaranteed to remain valid over time.
