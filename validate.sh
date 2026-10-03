@@ -12,7 +12,7 @@ do
 		exit 1
 	fi
 	check=$(pdfgrep -i -c "dominique righetto" "$adv")
-	if [ $check -ne 1 ]
+	if [ $check -lt 1 ]
 	then
 		echo "[!] File '$adv' do not contains a reference to me!"
 		exit 2
